@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les tableaux en html</title>
+    <style>
+      table {
+        margin: auto;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        table-layout: auto;
+        margin-bottom: 2000px;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        vertical-align: text-top;
+        height: 10px;
+        width: 20000px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <table border="1">
+      <tr>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Age</th>
+        <th>Mail</th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>Giraud</td>
+          <td>Pierre</td>
+          <td>28</td>
+          <td>pierre.giraud@edhc.com</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Joly</td>
+          <td>Pauline</td>
+          <td>27</td>
+          <td>pjl@gmail.com</td>
+        </tr>
+      </tfoot>
+    </table> -->
+
+    <table border="1" align="right">
+      <caption>
+        Informations participants
+      </caption>
+      <tbody>
+        <tr>
+          <td>Nom</td>
+          <td>Prenom 1</td>
+          <td>Prenom 2</td>
+          <td>Prenom 3</td>
+          <td>Email 1</td>
+          <td>Email 2</td>
+          <td>Inscrit ?</td>
+        </tr>
+        <tr>
+          <td>giraud</td>
+          <td>pierre</td>
+          <td colspan="2">victor</td>
+          <td colspan="2">pierre@gmail.com</td>
+          <td rowspan="2">oui</td>
+        </tr>
+        <tr>
+          <td>joly</td>
+          <td colspan="3">Pauline</td>
+          <td>pauline@gmail.com</td>
+          <td>joly@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
