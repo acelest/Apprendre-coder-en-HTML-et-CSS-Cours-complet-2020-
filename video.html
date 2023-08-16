@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video en CSS</title>
+    <style>
+      body {
+      }
+      video {
+        padding-left: 50px;
+        width: 900px;
+        /* margin-bottom: 100px; */
+        /* margin: auto; */
+        /* padding-left: 100px; */
+      }
+      .count {
+        float: right;
+        margin-right: 10px;
+      }
+      p {
+        font-weight: 1000;
+        font-size: x-large;
+        margin-left: 100px;
+        margin-top: 10px;
+      }
+      .logo {
+        width: 50px;
+        border-radius: 20px;
+        border-style: outset;
+        margin-bottom: 500px;
+      }
+      .description {
+        border: 1px solid black;
+        font-style: italic;
+        font-size: small;
+        font-family: "Times New Roman", Times, serif;
+        padding-bottom: 1px;
+        box-sizing: border-box;
+        margin-right: 400px;
+      }
+      #video {
+        position: relative;
+        float: right;
+        bottom: 630px;
+        width: 200px;
+        height: 150px;
+        margin-right: 60px;
+        border: 3px solid rgb(243, 3, 3);
+        border-style: groove;
+        /* display: table;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(2, 300px); */
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="img/django.jpg" alt="" />
+    <video src="video/WWDC23- 17 big & little things - Apple.mp4" controls>
+      Le format n'est pas supporte
+    </video>
+    <div class="count">Mon compte 🔔</div>
+    <p>Apple- WWDC23 🎡</p>
+    <p class="description">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident totam
+      nihil alias sequi esse, aliquam quidem nesciunt doloremque facere hic sit
+      unde doloribus? Exercitationem repudiandae nobis sunt reprehenderit
+      corrupti aperiam illum suscipit, inventore modi dolorem minima
+      necessitatibus eligendi placeat enim quae. Laudantium dicta soluta fugiat
+      accusantium ipsam animi temporibus accusamus?
+    </p>
+    <img id="video" src="img/django.jpg" alt="" />
+  </body>
+</html>
