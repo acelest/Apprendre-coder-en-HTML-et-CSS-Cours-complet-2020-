@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precision du selecteur</title>
+    <style>
+      p {
+        color: red;
+        text-decoration: underline;
+        text-transform: capitalize;
+        /* text-indent: 10px; indenter le texte */
+        text-shadow: 5px 5px 5px red;
+        /* text-decoration: underline wavy; */
+        letter-spacing: 2px;
+        line-height: 10px;
+      }
+      ul.petit {
+        font-size: 12px;
+      }
+      .bigorange {
+        color: orange;
+        font: size 24px;
+        font-size: 10px;
+      }
+      #green {
+        color: green;
+      }
+      #yellow {
+        color: yellow;
+      }
+      body {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bigorange">Un titre de niveau 1</h1>
+    <p class="petit">Un premier paragraphe</p>
+    <p class="bigorange">Un autre paragraphe</p>
+    <ul>
+      <li>Element de liste 1</li>
+      <li class="bigorange petit">Element de liste 2</li>
+    </ul>
+    <p class="bigorange" id="green">Un troisieme paragraphe</p>
+    <p style="color: purple" class="bigorange" id="yellow">
+      Un dernier paragraphe
+    </p>
+  </body>
+</html>

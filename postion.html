@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      p {
+        background-color: aquamarine;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        border: 2px rgb(157, 157, 157);
+        border-radius: 10px;
+        border-style: ridge outset;
+        box-sizing: border-box;
+      }
+      .relatif {
+        position: relative;
+      }
+      .haut {
+        top: 60px;
+      }
+      .gauche {
+        left: 150px;
+      }
+      .droite {
+        right: 60px;
+      }
+      .bleu {
+        background-color: aqua;
+      }
+      .vert {
+        background-color: rgb(21, 223, 21);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Un premier paragraphe</p>
+    <p class="relatif haut">Un deuxieme paragraphe</p>
+    <p class="statique gauche">
+      Un<span class="relatif gauche">troisieme</span> paragraphe
+    </p>
+    <br /><br />
+    <div class="carre1 bleu"></div>
+    <div class="carre2 vert relatif haut droite"></div>
+    <div class="carre bleu"></div>
+  </body>
+</html>
