@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+    <style>
+      p {
+        background-color: aquamarine;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .bleu {
+        background-color: #0af;
+      }
+      .vert {
+        background-color: rgb(16, 192, 40);
+      }
+      .relatif {
+        position: relative;
+      }
+      .decale {
+        right: 75px;
+        top: 25px;
+      }
+      .z100 {
+        z-index: 200;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Sans Z-index:</h2>
+    <div class="carre bleu relatif"></div>
+    <div class="carre relatif vert decale"></div>
+    <h2>Avec z-index</h2>
+    <div class="carre bleu relatif z100"></div>
+    <div class="carre relatif vert decale"></div>
+  </body>
+</html>
