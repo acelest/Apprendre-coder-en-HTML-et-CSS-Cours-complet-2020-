@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Degrade en CSS</title>
+    <style>
+      div {
+        width: 400px;
+        height: 100px;
+        border: 2px solid #333;
+        margin: 10px auto;
+      }
+      .ex1 {
+        background: linear-gradient(yellow, red);
+      }
+      .ex2 {
+        background: linear-gradient(to bottom, yellow, red);
+      }
+      .ex3 {
+        /* background: linear-gradient(180deg, yellow, red); */
+        background: linear-gradient(yellow 40%, 60%, purple);
+      }
+      .ex4 {
+        background: linear-gradient (to bottom, yellow 0%, red 100%);
+      }
+      .ex5 {
+        background: linear-gradient(to top, red, yellow);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tutoriel HTML et CSS</h1>
+    <div class="ex1"></div>
+    <div class="ex2"></div>
+    <div class="ex3"></div>
+    <div class="ex4"></div>
+    <div class="ex5"></div>
+  </body>
+</html>
