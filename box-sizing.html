@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-sizing</title>
+    <style>
+      /* le box-sing est utiliser pour contenir notre element a l'interieur de son parent */
+      .conteneur {
+        width: 80%;
+        background-color: blue;
+        border: 2px solid black;
+      }
+      p {
+        width: 100%;
+        background-color: #0cc;
+        padding: 40px;
+        border: 10px solid black;
+      }
+      #p2 {
+        box-sizing: border-box;
+      }
+      #p3 {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Un titre de niveau 1</h1>
+    <div class="conteneur">
+      <p id="p1">Un premier paragraphe</p>
+      <p id="p2">Un deuxieme paragraphe</p>
+      <p id="p3">Un trosieme paragraphe</p>
+    </div>
+  </body>
+</html>
